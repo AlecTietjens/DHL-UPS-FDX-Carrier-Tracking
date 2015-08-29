@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BadgeTrackingProjectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ShippingInfoMailroom">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ShipmentDate" Type="DateTime" Precision="3" />
+    <Property Name="Carrier" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CarrierTrackingNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CarrierPlannedDeliverDate" Type="DateTime" Precision="3" />
+    <Property Name="EstDeliverDate" Type="DateTime" Precision="3" />
+    <Property Name="ActDeliverDate" Type="DateTime" Precision="3" />
+    <Property Name="ServiceLevel" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ShipRequestCreateDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="PackageStatus" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ShortBuildingName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ReceiverAddress1" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ReceiverAddress2" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ReceiverCity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ReceiverPostalCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ReceiverCountryCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ShipRequestNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MaxDeliverPeriod" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="BadgeTrackingProjectEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ShippingInfoMailrooms" EntityType="Self.ShippingInfoMailroom" />
+  </EntityContainer>
+</Schema>

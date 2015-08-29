@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BadgeTrackingProjectModelStoreContainer" CdmEntityContainer="BadgeTrackingProjectEntities">
+    <EntitySetMapping Name="ShippingInfoMailrooms">
+      <EntityTypeMapping TypeName="BadgeTrackingProjectModel.ShippingInfoMailroom">
+        <MappingFragment StoreEntitySet="ShippingInfoMailroom">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ShipmentDate" ColumnName="ShipmentDate" />
+          <ScalarProperty Name="Carrier" ColumnName="Carrier" />
+          <ScalarProperty Name="CarrierTrackingNumber" ColumnName="CarrierTrackingNumber" />
+          <ScalarProperty Name="CarrierPlannedDeliverDate" ColumnName="CarrierPlannedDeliverDate" />
+          <ScalarProperty Name="EstDeliverDate" ColumnName="EstDeliverDate" />
+          <ScalarProperty Name="ActDeliverDate" ColumnName="ActDeliverDate" />
+          <ScalarProperty Name="ServiceLevel" ColumnName="ServiceLevel" />
+          <ScalarProperty Name="ShipRequestCreateDate" ColumnName="ShipRequestCreateDate" />
+          <ScalarProperty Name="PackageStatus" ColumnName="PackageStatus" />
+          <ScalarProperty Name="ShortBuildingName" ColumnName="ShortBuildingName" />
+          <ScalarProperty Name="ReceiverAddress1" ColumnName="ReceiverAddress1" />
+          <ScalarProperty Name="ReceiverAddress2" ColumnName="ReceiverAddress2" />
+          <ScalarProperty Name="ReceiverCity" ColumnName="ReceiverCity" />
+          <ScalarProperty Name="ReceiverPostalCode" ColumnName="ReceiverPostalCode" />
+          <ScalarProperty Name="ReceiverCountryCode" ColumnName="ReceiverCountryCode" />
+          <ScalarProperty Name="ShipRequestNumber" ColumnName="ShipRequestNumber" />
+          <ScalarProperty Name="MaxDeliverPeriod" ColumnName="MaxDeliverPeriod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

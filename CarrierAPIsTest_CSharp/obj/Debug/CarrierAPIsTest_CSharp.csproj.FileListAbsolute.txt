@@ -1,0 +1,10 @@
+c:\users\v-altiet\documents\visual studio 2013\Projects\CarrierAPIsTest_CSharp\CarrierAPIsTest_CSharp\bin\Debug\CarrierAPIsTest_CSharp.exe.config
+c:\users\v-altiet\documents\visual studio 2013\Projects\CarrierAPIsTest_CSharp\CarrierAPIsTest_CSharp\bin\Debug\CarrierAPIsTest_CSharp.exe
+c:\users\v-altiet\documents\visual studio 2013\Projects\CarrierAPIsTest_CSharp\CarrierAPIsTest_CSharp\bin\Debug\CarrierAPIsTest_CSharp.pdb
+c:\users\v-altiet\documents\visual studio 2013\Projects\CarrierAPIsTest_CSharp\CarrierAPIsTest_CSharp\obj\Debug\CarrierAPIsTest_CSharp.csprojResolveAssemblyReference.cache
+c:\users\v-altiet\documents\visual studio 2013\Projects\CarrierAPIsTest_CSharp\CarrierAPIsTest_CSharp\obj\Debug\CarrierAPIsTest_CSharp.exe
+c:\users\v-altiet\documents\visual studio 2013\Projects\CarrierAPIsTest_CSharp\CarrierAPIsTest_CSharp\obj\Debug\CarrierAPIsTest_CSharp.pdb
+C:\Users\v-altiet\documents\visual studio 2013\Projects\CarrierAPIsTest_CSharp\CarrierAPIsTest_CSharp\bin\Debug\EntityFramework.dll
+C:\Users\v-altiet\documents\visual studio 2013\Projects\CarrierAPIsTest_CSharp\CarrierAPIsTest_CSharp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\v-altiet\documents\visual studio 2013\Projects\CarrierAPIsTest_CSharp\CarrierAPIsTest_CSharp\bin\Debug\EntityFramework.xml
+C:\Users\v-altiet\documents\visual studio 2013\Projects\CarrierAPIsTest_CSharp\CarrierAPIsTest_CSharp\bin\Debug\EntityFramework.SqlServer.xml

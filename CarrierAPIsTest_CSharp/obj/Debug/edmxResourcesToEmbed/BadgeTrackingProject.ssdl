@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BadgeTrackingProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ShippingInfoMailroom">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ShipmentDate" Type="datetime" />
+    <Property Name="Carrier" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CarrierTrackingNumber" Type="nvarchar" MaxLength="100" />
+    <Property Name="CarrierPlannedDeliverDate" Type="datetime" />
+    <Property Name="EstDeliverDate" Type="datetime" />
+    <Property Name="ActDeliverDate" Type="datetime" />
+    <Property Name="ServiceLevel" Type="nvarchar" MaxLength="100" />
+    <Property Name="ShipRequestCreateDate" Type="datetime" Nullable="false" />
+    <Property Name="PackageStatus" Type="nvarchar" MaxLength="100" />
+    <Property Name="ShortBuildingName" Type="nvarchar" MaxLength="200" />
+    <Property Name="ReceiverAddress1" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="ReceiverAddress2" Type="nvarchar" MaxLength="200" />
+    <Property Name="ReceiverCity" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ReceiverPostalCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ReceiverCountryCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ShipRequestNumber" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="MaxDeliverPeriod" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="BadgeTrackingProjectModelStoreContainer">
+    <EntitySet Name="ShippingInfoMailroom" EntityType="Self.ShippingInfoMailroom" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

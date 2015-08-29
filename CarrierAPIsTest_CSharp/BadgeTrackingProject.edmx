@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="BadgeTrackingProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ShippingInfoMailroom">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ShipmentDate" Type="datetime" />
+          <Property Name="Carrier" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="CarrierTrackingNumber" Type="nvarchar" MaxLength="100" />
+          <Property Name="CarrierPlannedDeliverDate" Type="datetime" />
+          <Property Name="EstDeliverDate" Type="datetime" />
+          <Property Name="ActDeliverDate" Type="datetime" />
+          <Property Name="ServiceLevel" Type="nvarchar" MaxLength="100" />
+          <Property Name="ShipRequestCreateDate" Type="datetime" Nullable="false" />
+          <Property Name="PackageStatus" Type="nvarchar" MaxLength="100" />
+          <Property Name="ShortBuildingName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ReceiverAddress1" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="ReceiverAddress2" Type="nvarchar" MaxLength="200" />
+          <Property Name="ReceiverCity" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ReceiverPostalCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ReceiverCountryCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="ShipRequestNumber" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="MaxDeliverPeriod" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="BadgeTrackingProjectModelStoreContainer">
+          <EntitySet Name="ShippingInfoMailroom" EntityType="Self.ShippingInfoMailroom" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BadgeTrackingProjectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ShippingInfoMailroom">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ShipmentDate" Type="DateTime" Precision="3" />
+          <Property Name="Carrier" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CarrierTrackingNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="CarrierPlannedDeliverDate" Type="DateTime" Precision="3" />
+          <Property Name="EstDeliverDate" Type="DateTime" Precision="3" />
+          <Property Name="ActDeliverDate" Type="DateTime" Precision="3" />
+          <Property Name="ServiceLevel" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ShipRequestCreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="PackageStatus" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ShortBuildingName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="ReceiverAddress1" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ReceiverAddress2" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="ReceiverCity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ReceiverPostalCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ReceiverCountryCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ShipRequestNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MaxDeliverPeriod" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="BadgeTrackingProjectEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ShippingInfoMailrooms" EntityType="Self.ShippingInfoMailroom" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BadgeTrackingProjectModelStoreContainer" CdmEntityContainer="BadgeTrackingProjectEntities">
+          <EntitySetMapping Name="ShippingInfoMailrooms">
+            <EntityTypeMapping TypeName="BadgeTrackingProjectModel.ShippingInfoMailroom">
+              <MappingFragment StoreEntitySet="ShippingInfoMailroom">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ShipmentDate" ColumnName="ShipmentDate" />
+                <ScalarProperty Name="Carrier" ColumnName="Carrier" />
+                <ScalarProperty Name="CarrierTrackingNumber" ColumnName="CarrierTrackingNumber" />
+                <ScalarProperty Name="CarrierPlannedDeliverDate" ColumnName="CarrierPlannedDeliverDate" />
+                <ScalarProperty Name="EstDeliverDate" ColumnName="EstDeliverDate" />
+                <ScalarProperty Name="ActDeliverDate" ColumnName="ActDeliverDate" />
+                <ScalarProperty Name="ServiceLevel" ColumnName="ServiceLevel" />
+                <ScalarProperty Name="ShipRequestCreateDate" ColumnName="ShipRequestCreateDate" />
+                <ScalarProperty Name="PackageStatus" ColumnName="PackageStatus" />
+                <ScalarProperty Name="ShortBuildingName" ColumnName="ShortBuildingName" />
+                <ScalarProperty Name="ReceiverAddress1" ColumnName="ReceiverAddress1" />
+                <ScalarProperty Name="ReceiverAddress2" ColumnName="ReceiverAddress2" />
+                <ScalarProperty Name="ReceiverCity" ColumnName="ReceiverCity" />
+                <ScalarProperty Name="ReceiverPostalCode" ColumnName="ReceiverPostalCode" />
+                <ScalarProperty Name="ReceiverCountryCode" ColumnName="ReceiverCountryCode" />
+                <ScalarProperty Name="ShipRequestNumber" ColumnName="ShipRequestNumber" />
+                <ScalarProperty Name="MaxDeliverPeriod" ColumnName="MaxDeliverPeriod" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
