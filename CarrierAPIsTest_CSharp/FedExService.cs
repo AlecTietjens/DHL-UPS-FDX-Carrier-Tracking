@@ -11,10 +11,10 @@ namespace CarrierAPIsTest_CSharp
     class FedExService
     {
         // Static variables
-        private static string KEY = "RGj2yyzW0WEVI51M";
-        private static string PASSWORD = "lhmccbI7rzDC6KgI5nBzS3Vfk";
-        private static string ACCOUNT_NUMBER = "489262622";
-        private static string METER_NUMBER = "108250743";
+        private static string KEY = "key here";
+        private static string PASSWORD = "password here";
+        private static string ACCOUNT_NUMBER = "account num here";
+        private static string METER_NUMBER = "meter num here";
 
         // Class variables
         private TrackService service;
