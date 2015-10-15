@@ -11,9 +11,9 @@ namespace CarrierAPIsTest_CSharp
     class UPSService
     {
         // private static variables
-        private static string USERNAME = "MS-ssl-0912";
-        private static string PASSWORD = "MS!sslive#";
-        private static string ACCESS_TOKEN = "CCF630D0572EBC55";
+        private static string USERNAME = "username here";
+        private static string PASSWORD = "password here";
+        private static string ACCESS_TOKEN = "access token here";
 
         // class variables
         private TrackService service;
