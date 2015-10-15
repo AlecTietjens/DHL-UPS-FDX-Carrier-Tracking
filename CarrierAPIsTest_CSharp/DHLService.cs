@@ -14,8 +14,9 @@ namespace CarrierAPIsTest_CSharp
     class DHLService
     {
         // static variables
-        private static string SITEID = "NovitexMcrsf";
-        private static string PASSWORD = "VqD60OdGNf";
+        private static string SITEID = "site id here";
+        private static string PASSWORD = "password here";
+        // this is the prod url
         private static string DHL_API_URL = "https://xmlpi-ea.dhl.com/XMLShippingServlet";
         private static string requestText =
             "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
